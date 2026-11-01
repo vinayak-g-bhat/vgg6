@@ -1,5 +1,7 @@
 import numpy as np
-import torch
+from PIL import Image, ImageEnhance, ImageOps
+import random
+
 class SubPolicy(object):
     def __init__(self, p1, operation1, magnitude_idx1, p2, operation2, magnitude_idx2, fillcolor=(128, 128, 128)):
         self.p1 = p1
